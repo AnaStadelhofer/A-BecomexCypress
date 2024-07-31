@@ -14,7 +14,7 @@ Para configurar o ambiente, afim de rodar a automação, é necessário instalar
 
 Após instalar as ferramentas solicitadas, é necessário fazer o git clone do projeto em alguma pasta do sua escolha.
 
-1. Criar uma pasta no caminho de sua escolha, exemplo: **C:\Documents\workspace\**
+1. Criar uma pasta no caminho de sua escolha, exemplo: **C:\Documents\workspace\***
 2. Abrir o CMD no caminho da pasta criada
 3. Rodar o seguinte comando: **git clone https://github.com/AnaStadelhofer/A-BecomexCypress.git**
 4. Acessar a pasta que foi criada com o projeto dando: **cd A-BecomexCypress**
