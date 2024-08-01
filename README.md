@@ -1,11 +1,13 @@
 
 # Cypress Becomex
 
-Esté repositório serve para armazenar um projeto de automação desenvolvido para um teste da empresa Becomex, ele tem como intituito:
-1. Realizar testes front-end;
-2. Realizar testse de API-REST.
+Este repositório serve para armazenar um projeto de automação feito em cypress, e2e e de api do GitHub, que foi solicitado pela Becomex para a vaga de Analista de Testes - Pleno.
+O projeto foi separado em duas partes:
+1. Dentro da pasta e2e possui os testes de interface e um arquivo .md informativo com: casos de testes e relatório dos testes;
+2. Dentro da pasta api, possui todo o teste de api feito usando a api do GitHub.
 
-# Configuração do ambiente
+----
+## Configuração do ambiente
 
 Para configurar o ambiente, afim de rodar a automação, é necessário instalar algumas dependências:
 
@@ -19,18 +21,31 @@ Após instalar as ferramentas solicitadas, é necessário fazer o git clone do p
 3. Rodar o seguinte comando: **git clone https://github.com/AnaStadelhofer/A-BecomexCypress.git**
 4. Acessar a pasta que foi criada com o projeto dando: **cd A-BecomexCypress**
 5. Rodar o comando para abrir o Visual Code: **code .**
+6. Rodar o comando **npm install**
 
-Agora, após ter feito o clone do projeto, basta instalar os pacotes necessários para rodar o projeto. Para isso, digite **npm install** no cmd do projeto.
 
+## Configurar o token do GitHub
+
+Para executar os testes de api, é necessário ter uma conta no GitHub e ter um token configurado. Para criar um token basta acessar o [link](https://github.com/settings/tokens/) e clicar em "Generate new token". 
+
+![Criar token](imgs-readme/image.png)
+
+Após isso é necessário preencher algumas permissões do token, tais como: 'repo' e 'delete_repo' conforme os prints.
+
+!!! e É de extrema importância essa parte, pois se não os testes não irão funcionar!
+
+![repo](imgs-readme/image-1.png)
+
+![delete_repo](imgs-readme/image-2.png)
+
+Por fim, vamos para última etapa de configuração que é a alteração do token e o nome de usuário. Para isso, abra o arquivo cypress/e2e/api/api.cy.js e altere as seguintes informações: Nome_usuário e token (que foi gerado nos passos acima).
+
+![alterar arquivo](imgs-readme/image3.png)
+
+----
 # Executar o projeto
 
 Após o projeto estar todo configurado, conforme descrito nos passos acima, basta apenas executar agora, para isso é preciso rodar o comando: **npx cypress open**.
 
 Depois de rodar o comando, ele irá abrir uma tela para selecionar qual o navegador para executar os testes automatizados, de preferencia escolha o Chrome, pois foi desenvolvido nele.
-
-# Separação do projeto
-
-Foi feito no projeto automação front-end e de api, que estão separadas pelas seguintes pastas:
-1. e2e: está os testes de front-end e, dentro dele também tem um caso de teste detalhando os cenários;
-2. 
 
