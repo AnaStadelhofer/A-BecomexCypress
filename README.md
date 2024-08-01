@@ -32,7 +32,7 @@ Para executar os testes de api, é necessário ter uma conta no GitHub e ter um 
 
 Após isso é necessário preencher algumas permissões do token, tais como: 'repo' e 'delete_repo' conforme os prints.
 
-!!! e É de extrema importância essa parte, pois se não os testes não irão funcionar!
+**É de extrema importância essa parte, pois se não os testes não irão funcionar!**
 
 ![repo](imgs-readme/image-1.png)
 
