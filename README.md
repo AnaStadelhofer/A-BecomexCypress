@@ -3,7 +3,7 @@
 
 Este repositório serve para armazenar um projeto de automação feito em cypress, e2e e de api do GitHub, que foi solicitado pela Becomex para a vaga de Analista de Testes - Pleno.
 O projeto foi separado em duas partes:
-1. Dentro da pasta e2e possui os testes de interface e um arquivo .md informativo com: casos de testes e relatório dos testes;
+1. Dentro da pasta e2e possui os testes de interface e um arquivo .md informativo com: casos de testes e sugestão de melhoria;
 2. Dentro da pasta api, possui todo o teste de api feito usando a api do GitHub.
 
 ----
